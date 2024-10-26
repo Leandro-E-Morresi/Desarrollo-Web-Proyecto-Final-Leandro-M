@@ -1,0 +1,25 @@
+// _main.scss
+@import 'variables';
+
+main {
+    margin-top: 50px;
+    color: $color-white-smoke;
+    text-align: center;
+
+    .bienvenidos {
+        font-size: 20px;
+        margin-top: 50px;
+
+        div {
+            p {
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    color: $color-white-smoke;
+}

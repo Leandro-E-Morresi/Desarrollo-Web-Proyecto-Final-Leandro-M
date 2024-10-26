@@ -1,0 +1,23 @@
+// _header.scss
+@import 'variables';
+@import 'mixins';
+
+header {
+    @include flex-center;
+    font-size: 15px;
+
+    nav {
+        ul {
+            @include flex-center(space-around);
+            gap: 20px;
+            list-style: none;
+
+            li a {
+                list-style: none;
+                color: $color-red;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+}

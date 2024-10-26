@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #000000;
+            color: #f5f5f5;
+        }
+        .bg-dark-custom {
+            background-color: #000000 !important;
+        }
+        .text-light-custom {
+            color: #f5f5f5 !important;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+        .navbar-brand img {
+            max-height: 100px;
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-toggler-icon {
+            background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30"><path stroke="currentColor" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/></svg>');
+        }
+        .navbar-nav {
+            margin-left: auto;
+        }
+        @media (max-width: 1023px) {
+            .navbar-toggler {
+                margin-left: auto;
+            }
+            .navbar-collapse {
+                background-color: #333; /* Fondo oscuro para el menú desplegable */
+            }
+            .navbar-nav .nav-link {
+                color: #f5f5f5; /* Color del texto en el menú desplegable */
+            }
+            .navbar-nav .nav-link:hover {
+                color: #ddd; /* Color del texto en hover */
+            }
+             /* ...resto del CSS... */
+    .navbar-toggler {
+        border: none;
+        background-color: transparent; /* Para que no tenga fondo */
+    }
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 30 30"><path stroke="white" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/></svg>');
+    }
+        }
+    </style>
+    <title>Morresi Detailing</title>
+</head>
+<body>
+    <header class="bg-dark-custom text-light-custom">
+        <!-- Bootstrap Navbar -->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom">
+    <a class="navbar-brand" href="./index.html">
+        <img src="./images/logo.jpg" alt="Logotipo de Morresi Detailing">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link text-light-custom" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light-custom" href="./pages/sobre-nosotros.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light-custom" href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light-custom" href="./pages/marcas.html">Marcas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light-custom" href="./pages/contactos.html">Contactos</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    </header>
+
+    <main class="container my-4">
+        <h1 class="text-center mb-4">Bienvenidos</h1>
+        <div class="text-center mb-4">
+            <p>Morresi Detailing es una empresa dedicada a la reparación y mantenimiento de autos, con la mejor calidad y garantía que ofrecemos.</p>
+            <img src="./images/portadautonegro.jpg" class="img-fluid" alt="Portada de autos en negro">
+        </div>
+
+        <div class="mb-4">
+            <h2 class="text-light-custom">Sobre Nosotros</h2>
+            <p>
+                Somos una empresa que busca ofrecer un excelente servicio y una calidad garantizada para todos nuestros clientes. Nuestro objetivo es satisfacer sus necesidades y proporcionar un mejoramiento en el cuidado y mantenimiento de su vehículo.
+            </p>
+        </div>
+        
+        <div class="mb-4">
+            <h2 class="text-light-custom">Servicios</h2>
+            <div class="d-flex flex-wrap justify-content-around">
+                <img src="./images/puliendo2.jpg" class="img-fluid mb-2" alt="Proceso de pulido de auto">
+                <img src="./images/detallado.jpg" class="img-fluid mb-2" alt="Detallado de auto">
+                <img src="./images/lavado de motor.jpg" class="img-fluid mb-2" alt="Lavado de motor">
+            </div>
+        </div>
+
+        <div class="mb-4">
+            <h2 class="text-light-custom">Marcas</h2>
+            <p>Te mostramos algunas de las mejores marcas con las que trabajamos</p>
+            <div class="d-flex flex-wrap justify-content-around">
+                <img src="./images/koch-chemie-logo.jpg" class="img-fluid mb-2" alt="Logo de Koch Chemie">
+                <img src="./images/Menzerna.jpg" class="img-fluid mb-2" alt="Logo de Menzerna">
+                <img src="./images/Vonixx.jpg" class="img-fluid mb-2" alt="Logo de Vonixx">
+            </div>
+        </div>
+        
+        <div class="mb-4">
+            <h2 class="text-light-custom">Contáctanos</h2>
+            <!-- creación del formulario -->
+            <form>
+                <fieldset>
+                    <div class="mb-3">
+                        <label for="name" class="form-label text-light-custom">Nombre y Apellido</label>
+                        <input type="text" id="name" class="form-control" placeholder="Ejemplo: Juan Pérez" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label text-light-custom">Correo Electrónico</label>
+                        <input type="email" id="email" class="form-control" placeholder="Ejemplo: correo@ejemplo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label text-light-custom">Teléfono</label>
+                        <input type="tel" id="phone" class="form-control" placeholder="Ejemplo: +34 600 000 000" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label text-light-custom">Contraseña</label>
+                        <input type="password" id="password" class="form-control" placeholder="Tu contraseña" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender" class="form-label text-light-custom">Género</label>
+                        <select id="gender" class="form-select" required>
+                            <option value="" disabled selected>Selecciona tu género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-light">Enviar</button>
+                    <button type="reset" class="btn btn-secondary">Resetear</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    
+    <footer class="bg-dark-custom text-light-custom text-center py-3">
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

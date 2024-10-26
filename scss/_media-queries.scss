@@ -1,0 +1,48 @@
+// _media-queries.scss
+@import 'variables';
+@import 'mixins';
+
+@include mq(mobile) {
+    header {
+        background-color: $color-gray;
+        @include flex-center(space-around);
+    }
+
+    body {
+        background-color: $color-gray;
+    }
+
+    main {
+        background-color: $color-gray;
+    }
+}
+
+@include mq(tablet) {
+    header {
+        background-color: $color-dark-red;
+        @include flex-center(space-around);
+    }
+
+    body {
+        background-color: $color-dark-red;
+    }
+
+    main {
+        background-color: $color-dark-red;
+    }
+}
+
+@include mq(desktop) {
+    header {
+        background-color: $color-black;
+        @include flex-center(space-around);
+    }
+
+    body {
+        background-color: $color-black;
+    }
+
+    main {
+        background-color: $color-black;
+    }
+}
